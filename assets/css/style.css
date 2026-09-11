@@ -1,0 +1,102 @@
+:root {
+    --bg-krem: #FDFBF7;
+    --primary-brown: #A38A5F;
+    --navy-dark: #1D2A3A;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--bg-krem);
+    font-family: 'Poppins', sans-serif;
+    color: var(--navy-dark);
+}
+
+/* --- LOGO OCEAN HOTEL VIA CSS MURNI --- */
+.ocean-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-badge {
+    width: 40px;
+    height: 60px;
+    border: 2px solid var(--primary-brown);
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+/* Efek garis melingkar matahari di dalam logo */
+.logo-badge::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid var(--primary-brown);
+    border-radius: 50%;
+}
+
+/* Efek ombak/gelombang di bagian bawah logo */
+.logo-badge::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    width: 50px;
+    height: 30px;
+    border-top: 2px solid var(--primary-brown);
+    border-radius: 40% 40% 0 0;
+    transform: rotate(-10deg);
+}
+
+.logo-text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-title {
+    font-family: 'Cinzel', 'Georgia', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    color: var(--navy-dark);
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.logo-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    color: var(--primary-brown);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* --- NAVBAR STYLING --- */
+.navbar-ocean {
+    background-color: var(--white);
+    border-bottom: 2px solid #EFECE6;
+    padding: 10px 20px;
+}
+
+/* --- CARD CUSTOM --- */
+.card-ocean {
+    background: var(--white);
+    border: 1px solid #EFECE6;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(29, 42, 58, 0.03);
+}
+
+.btn-ocean {
+    background-color: var(--primary-brown);
+    color: var(--white);
+    border: none;
+}
+.btn-ocean:hover {
+    background-color: #8C744E;
+    color: var(--white);
+}
